@@ -1,1 +1,1 @@
-istall FastAPI
+install FastAPI
