@@ -12,7 +12,7 @@ async def health():
 @app.get("/get-hostname")
 async def get_hostname():
     hostname = socket.gethostname()
-    return {"hostname": hostname}
+    return {"Nazwa Hosta": hostname}
 
 
 if __name__ == "__main__":
