@@ -4,13 +4,11 @@ import socket
 app = FastAPI()
 
 
-# Endpoint "health" zwracający status 200
 @app.get("/health")
 async def health():
     return {"status": "ok"}
 
 
-# Endpoint "get-hostname" zwracający nazwę hosta
 @app.get("/get-hostname")
 async def get_hostname():
     hostname = socket.gethostname()
